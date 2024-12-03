@@ -115,20 +115,27 @@ a {
 
 
 
+.welcome-text h2 {
+  font-size: 1.6em;
+}
 
+.welcome-text p {
+  font-size: 1em;
+}
 
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  box-sizing: border-box;
+  gap: 10px;
 }
 
 #welcome {
-  padding: 0 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .welcome-text {
   grid-column: 1/6;
-  font-size: 18px;
 }
 
 .welcome-img {
@@ -136,12 +143,11 @@ a {
 }
 
 .welcome-img img {
-  width: 200%;
+  width: 115%;
 }
 
-.welcome-text a {
-  margin: 20px 0;
-}
+
+
 
 @media screen and (min-width: 620px) {
   #welcome {
@@ -192,3 +198,37 @@ a {
 
 }
 
+
+
+
+
+
+
+
+
+
+.footer {
+  background: #10182F;
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+}
