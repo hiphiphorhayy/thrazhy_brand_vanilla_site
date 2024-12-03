@@ -117,10 +117,12 @@ a {
 
 .welcome-text h2 {
   font-size: 1.6em;
+  color: black;
 }
 
 .welcome-text p {
   font-size: 1em;
+  color: black;
 }
 
 .grid {
